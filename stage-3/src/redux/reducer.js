@@ -28,8 +28,7 @@ export default function reducer(state=initialState, action) {
             let newArray = state.shoppingCart.slice();
             newArray.splice(action.index, 1);
             return Object.assign({}, {shoppingCart: newArray});
-            
-        defualt:
+        default:
             return state;
     }
 }
